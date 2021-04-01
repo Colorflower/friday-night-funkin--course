@@ -1,0 +1,16 @@
+title: Friday Night Funkin'
+description: I fuckin tried lmao
+template:
+  repo: friday-night-funkin'-template
+  name: friday-night-funkin'
+before:
+  - type: createIssue
+    title: Welcome!
+    body: new-issue.md
+steps:
+  - title: First step
+    description: The first step in your course
+    event: issues.assigned
+    link: '{{ repoUrl }}'
+    actions:
+      - type: closeIssue
